@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/02/24 18:41:07 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/02/25 00:27:05 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ public:
     Cat();
     Cat( Cat &other);
     Cat& operator=(Cat &other);
-    ~Cat();
+    virtual  ~Cat();
 
     /* setter */
     //void set_type(std::string _type)  ;
