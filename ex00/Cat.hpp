@@ -6,9 +6,13 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/02/25 00:27:05 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/02/27 01:14:14 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef CAT_HPP
+#define CAT_HPP
+
 
 #include "Animal.hpp"
 
@@ -63,3 +67,5 @@ Cat::~Cat()
 }
 
 /* setter */
+
+#endif

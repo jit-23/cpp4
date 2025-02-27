@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:55:25 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/02/25 00:26:52 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/02/27 15:21:18 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,18 +16,18 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
-
+#include "Brain.hpp"
 class Animal
 {
-private:
+protected:
     std::string type;
 public:
     Animal();
     Animal( Animal &other);
-
     Animal& operator=(const Animal& other);
     virtual ~Animal();
-
+    
+    virtual Brain *get_brain() ;
     /* setter */
 
     void    set_type(std::string _type);
@@ -37,6 +37,12 @@ public:
 
     //void announce()
 };
+
+
+Brain* Animal::get_brain() 
+{
+    return (NULL);    
+}
 
 /* constructor */
 Animal::Animal(){
