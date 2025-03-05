@@ -6,9 +6,12 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/02/27 15:21:10 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/05 23:04:25 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef CAT_HPP
+#define CAT_HPP
 
 #include "Animal.hpp"
 #include "Brain.hpp"
@@ -29,48 +32,11 @@ public:
 
     /* funct */
     Brain *get_brain() ;
+    void set_brain(Cat &other) ;
+    
     void makeSound();
 
 };
 
-/* fuct */
-void Cat::makeSound() {std::cout << "Miawwwwwwww" << std::endl;}
 
-Brain* Cat::get_brain() 
-{
-    return (_brain);    
-}
-
-
-/* constructors */
-Cat::Cat() : Animal(){
-    _brain = new Brain();
-    std::cout << "Cat Default constructor called" << std::endl;
-    set_type("Cat");
-}
-
-Cat::Cat(Cat &other) : Animal(other) {
-    _brain = other._brain;
-    std::cout << "Cat copy constructor called" << std::endl;
-    set_type(other.get_type());
-}
-
-Cat& Cat::operator=(Cat &other) 
-{
-    std::cout << "Cat assignment operator called" << std::endl;
-    if (this != &other)
-    {
-        this->_brain = other._brain;
-        set_type(other.get_type());
-    }
-    return (*this);
-}
-
-/* destructor */
-Cat::~Cat()
-{
-    delete this->_brain;
-    std::cout << "Cat Default destructor called" << std::endl;
-}
-
-/* setter */
+#endif

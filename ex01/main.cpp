@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/13 00:48:48 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/02/27 15:26:26 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/05 22:37:55 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,15 @@ int main()
 	Animal* j[10];
 	for (int i = 0; i < 5; i++)
 		j[i] = new Cat();
-	for (int i = 0; i < 5; i++)
+	for (int i = 5; i < 10; i++)
 		j[i] = new Dog();	
 	
-	//
-	//j[2]->makeSound();
-	//j[7]->makeSound();
-	std::cout << "lol" << std::endl;
-	printf("%p\n", j[3]->get_brain());
-	//std::cout << "j[3]->get_brain() - " << * << std::endl;
-	std::cout << "lol" << std::endl;
-	
+	for (int i = 0; i < 100; i++)
+		j[0]->get_brain()->set_ideas("animal?");
+	for (int i = 0; i < 100; i++)
+	{
+		std::cout << j[0]->get_brain()->get_ideas(i) << std::endl ;
+	}
 	for (int i = 0; i < 10; i++)
 		delete j[i];
 	
