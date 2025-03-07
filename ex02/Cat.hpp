@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/24 22:03:22 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/07 17:56:47 by fde-jesu         ###   ########.fr       */
+/*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
+/*   Updated: 2025/03/05 23:04:25 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WRONGANIMAL_HPP
-#define WRONGANIMAL_HPP
+#ifndef CAT_HPP
+#define CAT_HPP
 
-#include <iostream>
-#include <cstring>
-#include <cctype>
-
-class WrongAnimal
+#include "Animal.hpp"
+#include "Brain.hpp"
+class Cat : public Animal
 {
 private:
-    std::string type;
+    Brain *_brain;
 public:
-    WrongAnimal();
-    WrongAnimal( WrongAnimal &other);
-
-    WrongAnimal& operator=(const WrongAnimal& other);
-    virtual ~WrongAnimal();
+    Cat();
+    Cat( Cat &other);
+    Cat& operator=(Cat &other);
+    virtual  ~Cat();
 
     /* setter */
-
-    void    set_type(std::string _type);
+    //void set_type(std::string _type)  ;
     /* getter */
-    std::string    get_type();
-    virtual void makeSound();
+   // std::string get_type()  ;
 
-    //void announce()
+    /* funct */
+    Brain *get_brain() ;
+    void set_brain(Cat &other) ;
+    
+    void makeSound();
+
 };
 
 
