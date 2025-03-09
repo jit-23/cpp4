@@ -8,12 +8,12 @@ Dog::Dog() : Animal(){
     set_type("Dog");
 }
 
-Dog::Dog(Dog &other) : Animal( other) {
+Dog::Dog(const Dog &other) : Animal( other) {
     std::cout << "Dog copy constructor called" << std::endl;
     set_type(other.get_type());
 }
 
-Dog& Dog::operator=(Dog &other) 
+Dog& Dog::operator=(const Dog &other) 
 {
     std::cout << "Dog assignment operator called" << std::endl;
     if (this != &other)

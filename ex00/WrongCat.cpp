@@ -9,12 +9,12 @@ WrongCat::WrongCat() : WrongAnimal(){
     set_type("WrongCat");
 }
 
-WrongCat::WrongCat(WrongCat &other) : WrongAnimal( other) {
+WrongCat::WrongCat(const WrongCat &other) : WrongAnimal( other) {
     std::cout << "WrongCat copy constructor called" << std::endl;
     set_type(other.get_type());
 }
 
-WrongCat& WrongCat::operator=(WrongCat &other) 
+WrongCat& WrongCat::operator=(const WrongCat &other) 
 {
     std::cout << "WrongCat assignment operator called" << std::endl;
     if (this != &other)

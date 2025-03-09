@@ -7,7 +7,7 @@ WrongAnimal::WrongAnimal(){
 }
 
 
-WrongAnimal::WrongAnimal(WrongAnimal &other) {
+WrongAnimal::WrongAnimal(const WrongAnimal &other) {
     std::cout << "WrongAnimal copy destructor" << std::endl;
     *this = other;
 }
@@ -35,7 +35,7 @@ void WrongAnimal::set_type(std::string _type)
 }
 
 /* getter */
-std::string WrongAnimal::get_type()
+std::string WrongAnimal::get_type() const
 {
     return (type);
 }

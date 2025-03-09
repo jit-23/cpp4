@@ -10,8 +10,8 @@ private:
 
 public:
     WrongCat();
-    WrongCat( WrongCat &other);
-    WrongCat& operator=(WrongCat &other);
+    WrongCat(const  WrongCat &other);
+    WrongCat& operator=(const WrongCat &other);
     virtual  ~WrongCat();
 
     /* setter */

@@ -7,7 +7,7 @@ Animal::Animal(){
 }
 
 
-Animal::Animal(Animal &other) {
+Animal::Animal(const Animal &other) {
     std::cout << "Animal copy destructor" << std::endl;
     *this = other;
 }
@@ -35,7 +35,7 @@ void Animal::set_type(std::string _type)
 }
 
 /* getter */
-std::string Animal::get_type()
+std::string Animal::get_type() const 
 {
     return (type);
 }

@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:55:25 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/05 22:39:03 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/09 20:08:44 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,16 @@ private:
     std::string type;
 public:
     Animal();
-    Animal( Animal &other);
+    Animal( const Animal &other);
 
     Animal& operator=(const Animal& other);
-    virtual ~Animal();
+    /* virtual */ ~Animal();
 
     /* setter */
 
     void    set_type(std::string _type);
     /* getter */
-    std::string    get_type();
+    std::string    get_type() const ;
     virtual void makeSound();
 
     //void announce()

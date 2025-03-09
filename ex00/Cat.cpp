@@ -10,12 +10,12 @@ Cat::Cat() : Animal(){
     set_type("Cat");
 }
 
-Cat::Cat(Cat &other) : Animal( other) {
+Cat::Cat(const Cat &other) : Animal(other) {
     std::cout << "Cat copy constructor called" << std::endl;
     set_type(other.get_type());
 }
 
-Cat& Cat::operator=(Cat &other) 
+Cat& Cat::operator=(const Cat &other) 
 {
     std::cout << "Cat assignment operator called" << std::endl;
     if (this != &other)

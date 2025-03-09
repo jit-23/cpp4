@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/05 22:39:49 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/09 19:54:32 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,11 @@
 class Cat : public Animal
 {
 private:
-    
+
 public:
     Cat();
-    Cat( Cat &other);
-    Cat& operator=(Cat &other);
+    Cat(const Cat &other);
+    Cat& operator=(const Cat &other);
     virtual  ~Cat();
 
     /* setter */
