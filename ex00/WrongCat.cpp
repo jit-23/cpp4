@@ -1,7 +1,7 @@
 #include "WrongCat.hpp"
 
 /* fuct */
-void WrongCat::makeSound() {std::cout << "WrongCat sound" << std::endl;}
+void WrongCat::makeSound()const {std::cout << "WrongCat sound" << std::endl;}
 
 /* constructors */
 WrongCat::WrongCat() : WrongAnimal(){

@@ -7,7 +7,7 @@ OBJ:=$(patsubst %.cpp, %.o, $(SRC))
 all: ${NAME}
 
 ${NAME}: ${OBJ}
-	${CXX} ${OBJ} ${CXXFLAGS} -o ${NAME}
+	${CXX}  ${CXXFLAGS} ${OBJ} -o ${NAME}
 clean:
 	rm -f ${OBJ}
 fclean: clean

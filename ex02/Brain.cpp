@@ -14,7 +14,7 @@ Brain::Brain(const Brain &other)
     std::cout << "Default Brain copy constructor" << std::endl;
 }
 
-Brain& Brain::operator=(Brain &other)
+Brain& Brain::operator=(const Brain &other)
 {
     for (int i = 0; i < 100; i++)
         this->ideas[i] = other.ideas[i];

@@ -3,7 +3,7 @@
 /* destructor */
 WrongAnimal::~WrongAnimal() {std::cout << "WrongAnimal Default destructor" << std::endl;}
 
-void WrongAnimal::makeSound() {std::cout << "Wronganimal dont speak!" << std::endl;}
+void WrongAnimal::makeSound() const {std::cout << "Wronganimal dont speak!" << std::endl;}
 
 /* setter */
 

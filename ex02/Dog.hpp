@@ -11,7 +11,7 @@ private:
 public:
     Dog();
     Dog( Dog &other);
-    Dog& operator=(Dog &other);
+    Dog& operator=(const Dog &other);
     virtual  ~Dog();
 
     /* setter */
@@ -23,7 +23,7 @@ public:
     Brain *get_brain() const;
     void set_brain(Dog &other) ;
     
-    void makeSound();
+    void makeSound()const ;
 
 };
 #endif

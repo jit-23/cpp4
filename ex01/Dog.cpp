@@ -27,7 +27,7 @@ Dog::Dog(Dog &other) : Animal(other) {
     set_type(other.get_type());
 }
 
-Dog& Dog::operator=(Dog &other) 
+Dog& Dog::operator=(const Dog &other) 
 {
     std::cout << "Dog assignment operator called" << std::endl;
     if (this != &other)

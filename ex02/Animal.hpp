@@ -22,7 +22,7 @@ public:
     virtual void    set_type(std::string _type) = 0;
     /* getter */
     virtual std::string    get_type() const = 0;
-    virtual void makeSound() = 0;
+    virtual void makeSound() const = 0;
 
     //void announce()
 };

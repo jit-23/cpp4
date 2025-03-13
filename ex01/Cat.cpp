@@ -22,17 +22,26 @@ Cat::Cat() : Animal(){
 
 Cat::Cat(Cat &other) : Animal(other) {
     _brain  = new Brain(*other._brain);
-    std::cout << "Cat copy constructor called" << std::endl;
+    //for (int i = 0; i < 100; i++)
+      //  _brain->set_ideas(other.get_brain()->get_ideas(i));
+      //std::cout << "." << other.get_brain()->get_ideas(1) << "." << std::endl;
+      //_brain->set_ideas();
+
+      std::cout << "Cat copy constructor called" << std::endl;
     set_type(other.get_type());
 }
 
-Cat& Cat::operator=(Cat &other) 
+Cat& Cat::operator=(const Cat &other) 
 {
     std::cout << "Cat assignment operator called" << std::endl;
     if (this != &other)
     {
         delete _brain;
-        _brain = new Brain(*other._brain);
+        _brain = new Brain(/* *other._brain */);
+        /* *_brain = * other._brain; */         
+        for (int i = 0; i < 100; i++)
+            _brain->set_ideas(other.get_brain()->get_ideas(i));
+        
         set_type(other.get_type());
     }
     return (*this);

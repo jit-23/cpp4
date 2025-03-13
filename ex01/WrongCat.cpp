@@ -16,12 +16,13 @@ WrongCat::WrongCat(WrongCat &other) : WrongAnimal( other) {
     set_type(other.get_type());
 }
 
-WrongCat& WrongCat::operator=(WrongCat &other) 
+WrongCat& WrongCat::operator=(const WrongCat &other) 
 {
     std::cout << "WrongCat assignment operator called" << std::endl;
     if (this != &other)
     {
 		delete _brain;
+        _brain  = new Brain(*other._brain);
         set_type(other.get_type());
     }
     return (*this);

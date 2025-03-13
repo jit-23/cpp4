@@ -33,7 +33,7 @@ public:
     void    set_type(std::string _type);
     /* getter */
     std::string    get_type()const;
-    virtual void makeSound();
+    virtual void makeSound()const ;
 
     //void announce()
 };

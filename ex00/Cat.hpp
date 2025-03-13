@@ -32,7 +32,7 @@ public:
    // std::string get_type()  ;
 
     /* funct */
-    void makeSound();
+    void makeSound()const;
 
 };
 #endif

@@ -1,7 +1,7 @@
 #include "Cat.hpp"
 
 
-void Cat::makeSound() {std::cout << "Miawwwwwwww" << std::endl;}
+void Cat::makeSound() const {std::cout << "Miawwwwwwww" << std::endl;}
 
 Brain* Cat::get_brain() const 
 {
@@ -26,7 +26,7 @@ Cat::Cat(Cat &other) : Animal(other) {
     set_type(other.get_type());
 }
 
-Cat& Cat::operator=(Cat &other) 
+Cat& Cat::operator=(const Cat &other) 
 {
     std::cout << "Cat assignment operator called" << std::endl;
     if (this != &other)

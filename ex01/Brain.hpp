@@ -12,7 +12,7 @@ protected:
 public:
     Brain();
     Brain(const Brain &other);
-    Brain& operator=(Brain &other);
+    Brain& operator=(const Brain &other);
     ~Brain();
     /* setters */
     void set_ideas(std::string idea) ;

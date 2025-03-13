@@ -24,7 +24,7 @@ Animal& Animal::operator=(const Animal &other)
 Animal::~Animal() {std::cout << "Animal Default destructor" << std::endl;}
 
 
-void Animal::makeSound() {std::cout << "animal dont speak!" << std::endl;}
+void Animal::makeSound() const {std::cout << "animal dont speak!" << std::endl;}
 
 
 /* setter */

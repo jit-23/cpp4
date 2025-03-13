@@ -11,7 +11,7 @@ private:
 public:
     Dog();
     Dog( Dog &other);
-    Dog& operator=(Dog &other);
+    Dog& operator=(const Dog &other);
     virtual  ~Dog();
 
     /* setter */

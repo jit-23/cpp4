@@ -22,7 +22,7 @@ private:
 public:
     Cat();
     Cat( Cat &other);
-    Cat& operator=(Cat &other);
+    Cat& operator=(const Cat &other);
     virtual  ~Cat();
 
     /* setter */
@@ -34,7 +34,7 @@ public:
     Brain *get_brain() const;
     void set_brain(Cat &other) ;
     
-    void makeSound();
+    void makeSound() const ;
 
 };
 

@@ -2,7 +2,7 @@
 
 
 /* fuct */
-void Cat::makeSound() {std::cout << "Miawwwwwwww" << std::endl;}
+void Cat::makeSound() const{std::cout << "Miawwwwwwww" << std::endl;}
 
 /* constructors */
 Cat::Cat() : Animal(){

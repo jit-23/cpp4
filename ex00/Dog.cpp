@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 /* fuct */
-void Dog::makeSound() {std::cout << "RUF RUF" << std::endl;}
+void Dog::makeSound() const{std::cout << "RUF RUF" << std::endl;}
 
 /* constructors */
 Dog::Dog() : Animal(){

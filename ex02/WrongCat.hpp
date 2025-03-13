@@ -12,7 +12,7 @@ private:
 public:
     WrongCat();
     WrongCat( WrongCat &other);
-    WrongCat& operator=(WrongCat &other);
+    WrongCat& operator=(const WrongCat &other);
     virtual  ~WrongCat();
 
     /* setter */
@@ -21,7 +21,7 @@ public:
    // std::string get_type()  ;
 
     /* funct */
-    virtual void makeSound();
+    virtual void makeSound()const ;
 	Brain* get_brain()const;
     void set_brain(WrongCat &other) ;
 };

@@ -22,7 +22,7 @@ Animal::Animal(){
     std::cout << "Animal Default constructor" << std::endl;
     this->type = "animal";
 }
-void Animal::makeSound() {std::cout << "animal dont speak!" << std::endl;}
+void Animal::makeSound() const {std::cout << "animal dont speak!" << std::endl;}
 
 Animal::Animal(Animal &other) {
     std::cout << "Animal copy destructor" << std::endl;
