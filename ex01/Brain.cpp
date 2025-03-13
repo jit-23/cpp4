@@ -34,14 +34,14 @@ void Brain::set_ideas(std::string idea)
     this->index++;
 }
 
-std::string Brain::get_ideas(int _index)
+std::string Brain::get_ideas(int _index) const
 {
     if (_index >= 0 && _index < 100)
         return (this->ideas[_index]);
     return "outside of ideas range";
 }
 
-int Brain::get_index()
+int Brain::get_index() const
 {
     return (this->index);
 }

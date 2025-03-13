@@ -4,7 +4,7 @@
 /* fuct */
 void Dog::makeSound() {std::cout << "RUF RUF" << std::endl;}
 
-Brain* Dog::get_brain() 
+Brain* Dog::get_brain()  const
 {
     return (_brain);    
 }

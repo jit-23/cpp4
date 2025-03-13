@@ -39,7 +39,7 @@ WrongCat::~WrongCat()
     std::cout << "WrongCat Default destructor called" << std::endl;
 }
 
-Brain* WrongCat::get_brain() 
+Brain* WrongCat::get_brain() const
 {
     return (_brain);    
 }

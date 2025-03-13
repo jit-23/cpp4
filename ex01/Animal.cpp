@@ -1,7 +1,7 @@
 #include "Animal.hpp"
 
 
-Brain* Animal::get_brain() 
+Brain* Animal::get_brain() const
 {
     return (NULL);    
 }
@@ -30,9 +30,6 @@ Animal& Animal::operator=(const Animal &other)
 /* destructor */
 Animal::~Animal() {std::cout << "Animal Default destructor" << std::endl;}
 
-
-
-
 /* setter */
 
 void Animal::set_type(std::string _type)
@@ -41,7 +38,7 @@ void Animal::set_type(std::string _type)
 }
 
 /* getter */
-std::string Animal::get_type()
+std::string Animal::get_type() const
 {
     return (type);
 }

@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:08:40 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/05 23:04:25 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/11 15:51:19 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ public:
    // std::string get_type()  ;
 
     /* funct */
-    Brain *get_brain() ;
+    Brain *get_brain() const;
     void set_brain(Cat &other) ;
     
     void makeSound();

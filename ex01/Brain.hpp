@@ -15,9 +15,9 @@ public:
     Brain& operator=(Brain &other);
     ~Brain();
     /* setters */
-    void set_ideas(std::string idea);
+    void set_ideas(std::string idea) ;
     /* getters  */
-    int get_index();
-    std::string get_ideas(int _index);
+    int get_index() const;
+    std::string get_ideas(int _index)const;
 };
 #endif

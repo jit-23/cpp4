@@ -22,7 +22,7 @@ public:
 
     /* funct */
     virtual void makeSound();
-	Brain* get_brain();
+	Brain* get_brain()const;
     void set_brain(WrongCat &other) ;
 };
 

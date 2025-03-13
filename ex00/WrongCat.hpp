@@ -12,7 +12,7 @@ public:
     WrongCat();
     WrongCat(const  WrongCat &other);
     WrongCat& operator=(const WrongCat &other);
-    virtual  ~WrongCat();
+ 	~WrongCat();
 
     /* setter */
     //void set_type(std::string _type);
@@ -20,7 +20,7 @@ public:
    // std::string get_type()  ;
 
     /* funct */
-    virtual void makeSound();
+    void makeSound();
 
 };
 

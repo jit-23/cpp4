@@ -20,7 +20,7 @@ public:
    // std::string get_type()  ;
 
     /* funct */
-    Brain *get_brain() ;
+    Brain *get_brain() const;
     void set_brain(Dog &other) ;
     
     void makeSound();

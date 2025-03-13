@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:55:25 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/09 20:08:44 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/11 16:08:39 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
     Animal( const Animal &other);
 
     Animal& operator=(const Animal& other);
-    /* virtual */ ~Animal();
+    virtual ~Animal();
 
     /* setter */
 

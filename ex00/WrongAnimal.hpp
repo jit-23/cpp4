@@ -6,7 +6,7 @@
 /*   By: fde-jesu <fde-jesu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 22:03:22 by fde-jesu          #+#    #+#             */
-/*   Updated: 2025/03/09 20:05:25 by fde-jesu         ###   ########.fr       */
+/*   Updated: 2025/03/11 15:24:51 by fde-jesu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ public:
     void    set_type(std::string _type);
     /* getter */
     std::string    get_type() const;
-    virtual void makeSound();
+    void makeSound();
 
     //void announce()
 };
