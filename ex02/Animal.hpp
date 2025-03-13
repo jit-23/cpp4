@@ -17,11 +17,11 @@ public:
     Animal( Animal &other) ;
     Animal& operator=(const Animal& other) ;
     virtual ~Animal() ;
-    virtual Brain *get_brain() const = 0;
+    virtual Brain *get_brain() const ;
     /* setter */
-    virtual void    set_type(std::string _type) = 0;
+    virtual void    set_type(std::string _type) ;
     /* getter */
-    virtual std::string    get_type() const = 0;
+    virtual std::string    get_type() const ;
     virtual void makeSound() const = 0;
 
     //void announce()

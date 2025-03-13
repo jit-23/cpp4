@@ -1,6 +1,4 @@
 #include "WrongAnimal.hpp"
-
-
 /* constructor  */
 
 WrongAnimal::WrongAnimal(){

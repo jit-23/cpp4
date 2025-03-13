@@ -20,8 +20,12 @@ int main()
 	animal->makeSound();
 	delete animal; */
 	
-	//Animal test;
+	//Animal test1;
 
+	Animal *test = new Dog();
+	Cat a;
+	test->makeSound();
+	a.makeSound();
 	/*Animal* j[10];
 	 for (int i = 0; i < 5; i++)
 		j[i] = new Cat();
